@@ -190,7 +190,7 @@ struct TintProfile
 			Tint_Struct Primary;
 			Tint_Struct Secondary;
 		};
-		Tint_Struct Slot[EQEmu::textures::materialCount];
+		Tint_Struct Slot[EQ::textures::materialCount];
 	};
 };
 
@@ -222,7 +222,7 @@ struct Texture_Struct
 //			Texture_Struct Primary;
 //			Texture_Struct Secondary;
 //		};
-//		Texture_Struct Slot[EQEmu::textures::TextureCount];
+//		Texture_Struct Slot[EQ::textures::TextureCount];
 //	};
 //
 //	TextureProfile();
@@ -4341,7 +4341,7 @@ struct SendAA_Struct {
 /*0104*/	uint32 special_category;
 /*0108*/	uint8 shroud;
 /*0109*/	uint8 unknown109;
-/*0110*/	uint8 layonhands; // 1 for lay on hands -- doesn't seem to matter?
+/*0110*/	uint8 reset_on_death; // timer is reset on death
 /*0111*/	uint8 unknown111;
 /*0112*/	uint32 total_abilities;
 /*0116*/	AA_Ability abilities[0];
@@ -4744,8 +4744,8 @@ struct ItemQuaternaryBodyStruct
 	int32 HealAmt;
 	int32 SpellDmg;
 	int32 Clairvoyance;
-	uint8 unknown18;	//Power Source Capacity or evolve filename?
-	uint32 evolve_string; // Some String, but being evolution related is just a guess
+	int32 SubType;
+	uint8 evolve_string; // Some String, but being evolution related is just a guess
 	uint8 unknown19;
 	uint32 unknown20;	// Bard Stuff?
 	//uint32 unknown21;

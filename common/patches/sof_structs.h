@@ -168,7 +168,7 @@ struct TintProfile
 			Tint_Struct Primary;
 			Tint_Struct Secondary;
 		};
-		Tint_Struct Slot[EQEmu::textures::materialCount];
+		Tint_Struct Slot[EQ::textures::materialCount];
 	};
 };
 
@@ -197,7 +197,7 @@ struct TextureProfile
 			Texture_Struct Primary;
 			Texture_Struct Secondary;
 		};
-		Texture_Struct Slot[EQEmu::textures::materialCount];
+		Texture_Struct Slot[EQ::textures::materialCount];
 	};
 
 	TextureProfile();
@@ -214,7 +214,7 @@ struct CharacterSelectEntry_Struct
 /*0000*/	uint8 Beard;				//
 /*0001*/	uint8 HairColor;			//
 /*0000*/	uint8 Face;					//
-/*0000*/	CharSelectEquip	Equip[EQEmu::textures::materialCount];
+/*0000*/	CharSelectEquip	Equip[EQ::textures::materialCount];
 /*0000*/	uint32 PrimaryIDFile;		//
 /*0000*/	uint32 SecondaryIDFile;		//
 /*0000*/	uint8 Unknown15;			// 0xff
@@ -3704,7 +3704,7 @@ struct SendAA_Struct {
 /*0088*/	uint32 aa_expansion;
 /*0092*/	uint32 special_category;
 /*0096*/	uint8 shroud;
-/*0097*/	uint8 unknown97;
+/*0097*/	uint8 reset_on_death; // timer is reset on death -- guess
 /*0098*/	uint32 total_abilities;
 /*0102*/	AA_Ability abilities[0];
 };

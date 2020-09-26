@@ -113,6 +113,11 @@ namespace Logs {
 		AoeCast,
 		EntityManagement,
 		Flee,
+		Aura,
+		HotReload,
+		Merchants,
+		ZonePoints,
+		Loot,
 		MaxCategoryID /* Don't Remove this */
 	};
 
@@ -185,6 +190,11 @@ namespace Logs {
 		"AOE Cast",
 		"Entity Management",
 		"Flee",
+		"Aura",
+		"HotReload",
+		"Merchants",
+		"ZonePoints",
+		"Loot"
 	};
 }
 
